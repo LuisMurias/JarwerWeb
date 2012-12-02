@@ -1,3 +1,8 @@
+jarwer_user:
+    resource: "@JarwerUserBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
 a_en_red_gamification:
     resource: "@AEnRedGamificationBundle/Controller/"
     type:     annotation
