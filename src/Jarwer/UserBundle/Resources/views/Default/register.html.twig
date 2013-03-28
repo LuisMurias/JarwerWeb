@@ -1,0 +1,14 @@
+{% extends '::base.html.twig' %}
+{% block title %}Regístrate{% endblock %}
+{% block body %}
+    <h1>{{ block('title') }}</h1>
+    <form action="{{ path('user_register') }}" method="post" 
+          {{form_enctype(form) }}>
+        {{ form_errors(form) }}
+        {{ form_row(form.username) }}
+        {{ form_row(form.email) }}
+        {{ form_row(form.password) }}
+        {{ form_rest(form) }}
+        <input class="boton" type="submit" value="Registro" />
+    </form>
+{% endblock %}
